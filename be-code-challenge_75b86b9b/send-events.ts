@@ -9,7 +9,7 @@ async function main() {
         }
 
         try {
-            await axios.post(`http://localhost:3000/${endpoint}`, message)
+            await axios.post(`http://localhost:5000/${endpoint}`, message)
         } catch (error) {
             console.error(error.code)
         }
