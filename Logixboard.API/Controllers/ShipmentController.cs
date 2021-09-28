@@ -79,7 +79,7 @@ namespace Logixboard.API.Controllers
 
         //POST /shipment
         [HttpPost]
-        public async Task<ActionResult<Shipment>> CreateShipment(ShipmentDTO shipment)
+        public async Task<ActionResult<ShipmentDTO>> CreateShipment(ShipmentDTO shipment)
         {
             Shipment newShipment = new Shipment(){
                 EstimatedTimeArrival = shipment.EstimatedTimeArrival,
