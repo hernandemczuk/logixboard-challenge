@@ -1,4 +1,4 @@
-# Pre-requisites
+# Requirements
 
 logixboard-challenge uses ASP .NET Core Web API (https://dotnet.microsoft.com/download), Entity Framework Core Tools (https://docs.microsoft.com/en-us/ef/core/cli/dotnet), and SQL Server (https://www.microsoft.com/en-us/sql-server/sql-server-downloads) on the persistance layer. Make sure to have these installed before continuing with the steps.
 
