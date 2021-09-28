@@ -70,7 +70,7 @@ namespace Logixboard.API.Controllers
                 var listOfWeights = nodes.Where(x => x.Unit == (Unit) Enum.Parse(typeof(Unit), enumUnit.ToString()))
                                          .Select(x => x.Weight);
                 foreach(var weight in listOfWeights){
-                    totalWeight += UnitConverters.Convert(weight, (Unit) Enum.Parse(typeof(Unit), enumUnit.ToString()), (Unit) Enum.Parse(typeof(Unit), unit.ToString()));
+                    totalWeight += UnitConverters.Convert(weight, (Unit) Enum.Parse(typeof(Unit), enumUnit.ToString()), (Unit) Enum.Parse(typeof(Unit), unit.ToUpper()));
                 }
             }
             return totalWeight;
