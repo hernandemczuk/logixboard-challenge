@@ -9,7 +9,6 @@ using Logixboard.API.Repositories;
 using Logixboard.Models;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using RabbitMQ.Client;
 
 namespace Logixboard.API.Controllers
 {
