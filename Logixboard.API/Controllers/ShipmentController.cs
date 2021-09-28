@@ -58,7 +58,8 @@ namespace Logixboard.API.Controllers
             return shipmentDto;
         }
 
-        //GET /shipment/:id
+        /// <param name="unit" example="kilograms, pounds, ounces"></param>
+        //GET /shipment/totalweight/{unit}
         [HttpGet("totalWeight/{unit}")]
         public async Task<ActionResult<decimal>> GetShipmentsTotalWeight(String unit)
         {
