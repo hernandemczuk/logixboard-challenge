@@ -40,7 +40,8 @@ The interesting part is that a Shipment can have zero to many Organizations asso
 party who is shipping the items, receiving the items, or paying for the item. It's important to know which Orgs
 are involved with a given shipment. Tracking these Shipment to Org relationships is key in storing the data.
 
-The data model is fairly simple in what you'll receive, you can inspect the data in `messages.ts` to see what they look like.
+The data model is fairly simple in what you'll receive, you can inspect the data in `messages.ts` to see what they look like. Each message is a **complete snapshot** of the object, ie you are receiving ALL the data for a given object each time, not just what has changed.
+Don't worry about tracking intermediary state, or object history, we only care about the most up to date view of a given object.
 On organization messages we receive both a unique identifier and a code. **Be warned, the `code` field can change over time!**
 
 Your API should persist or update the given object to maintain accurate data for later access. Feel free to use a persistence layer of your choosing that satisfies the requirements.

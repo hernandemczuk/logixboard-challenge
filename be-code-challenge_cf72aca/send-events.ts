@@ -2,19 +2,21 @@ import { messages } from './messages'
 import axios from 'axios'
 
 async function main() {
-    messages.forEach(async message => {
+    for (let i = 0; i < messages.length; i++) {
+        const message = messages[i]
         let endpoint = 'shipment'
         if (message.type === 'ORGANIZATION') {
             endpoint = 'organization'
         }
 
         try {
-            await axios.post(`http://localhost:5000/${endpoint}`, message)
+            var response = await axios.post(`http://localhost:5000/${endpoint}`, message)
+            console.log(response.request.res.headers)
         } catch (error) {
-            console.error(error.code)
+            console.error(error)
         }
 
-    })
+    }
 }
 
 main()
