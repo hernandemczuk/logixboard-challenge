@@ -15,62 +15,6 @@ export const messages = [
     "code": "FMT"
   },
   {
-    "type": "SHIPMENT",
-    "referenceId": "S00001175",
-    "organizations": ["SEA", "BOG", "FMT"],
-    "transportPacks": {
-      "nodes": [
-        {
-          "totalWeight": {
-            "weight": "0",
-            "unit": "KILOGRAMS"
-          }
-        }
-      ]
-    }
-  },
-  {
-    "type": "SHIPMENT",
-    "referenceId": "S00001009",
-    "organizations": [],
-    "estimatedTimeArrival": "2020-01-17T15:07:00",
-    "transportPacks": {
-      "nodes": [
-        {
-          "totalWeight": {
-            "weight": "1000",
-            "unit": "OUNCES"
-          }
-        }
-      ]
-    }
-  },
-  {
-    "type": "SHIPMENT",
-    "referenceId": "S00001142",
-    "organizations": ["FMT"],
-    "estimatedTimeArrival": "2020-08-29T00:00:00",
-    "transportPacks": {
-      "nodes": []
-    }
-  },
-  {
-    "type": "SHIPMENT",
-    "referenceId": "S00001071",
-    "organizations": ["BOG"],
-    "estimatedTimeArrival": "2020-03-13T00:00:00",
-    "transportPacks": {
-      "nodes": [
-        {
-          "totalWeight": {
-            "weight": "5",
-            "unit": "KILOGRAMS"
-          }
-        }
-      ]
-    }
-  },
-  {
     "type": "ORGANIZATION",
     "id": "34f195b5-2aa1-4914-85ab-f8849f9b541a",
     "code": "NAM"
@@ -84,7 +28,41 @@ export const messages = [
       "nodes": [
         {
           "totalWeight": {
-            "weight": "22690",
+            "weight": "10",
+            "unit": "KILOGRAMS"
+          }
+        },
+        {
+          "totalWeight": {
+            "weight": "2.20",
+            "unit": "POUNDS"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "SHIPMENT",
+    "referenceId": "S00001167",
+    "organizations": ["SEA", "NAM"],
+    "estimatedTimeArrival": "2020-11-21T00:00:00",
+    "transportPacks": {
+      "nodes": [
+        {
+          "totalWeight": {
+            "weight": "10",
+            "unit": "KILOGRAMS"
+          }
+        },
+        {
+          "totalWeight": {
+            "weight": "10",
+            "unit": "KILOGRAMS"
+          }
+        },
+        {
+          "totalWeight": {
+            "weight": "10",
             "unit": "KILOGRAMS"
           }
         }
@@ -116,7 +94,7 @@ export const messages = [
         {
           "totalWeight": {
             "weight": "10",
-            "unit": "POUNDS"
+            "unit": "KILOGRAMS"
           }
         }
       ]
@@ -131,11 +109,23 @@ export const messages = [
       "nodes": [
         {
           "totalWeight": {
-            "weight": "3",
+            "weight": "10",
             "unit": "KILOGRAMS"
+          }
+        },
+        {
+          "totalWeight": {
+            "weight": "2.21",
+            "unit": "POUNDS"
+          }
+        },
+        {
+          "totalWeight": {
+            "weight": "35.274",
+            "unit": "OUNCES"
           }
         }
       ]
     }
-  },
+  }
 ]
